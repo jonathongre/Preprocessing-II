@@ -1,11 +1,11 @@
 // Mixins in here
-.btnDesign {
-    width: 85%;
-    height: 40px;
-    border-radius: 10px;
+.btnDesign (@width, @height, @radius){
+    width: @width;
+    height: @height;
+    border-radius: @radius;
     background-color: @button-bg;
     color: #fff;
-    font-size: 18px;
+    font-size: 1.8rem;
 
     &:hover {
         background-color: lighten(@button-bg, 10%);

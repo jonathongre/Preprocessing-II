@@ -1,1 +1,25 @@
 // Mixins in here
+.btnDesign {
+    width: 85%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: @button-bg;
+    color: #fff;
+    font-size: 18px;
+
+    &:hover {
+        background-color: lighten(@button-bg, 10%);
+        cursor: pointer;
+    }
+}
+
+.anchor {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: @font-color;
+
+    &:hover {
+        color: lighten(@font-color, 50%);
+    }
+
+}
